@@ -1,7 +1,7 @@
 const express = require('express');
 const hbs = require('hbs');
  const fs =require('fs');
-
+const PORT = process.env.PORT || 3000;
 
 
 //staring a server, binding it to a local machine 
@@ -92,4 +92,7 @@ app.get('/bad', (req,res) =>{
 
 //for app to listen,this will bind the port to machine
 
-app.listen(3000);
+app.listen(PORT,() =>
+	{
+		console.log(`server is up on  ${PORT}`);
+	});
