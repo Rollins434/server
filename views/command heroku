@@ -1,0 +1,20 @@
+heroku login
+heroku keys:add(scan our directories and upload)
+heroku keys(prints all keys)
+ssh -v git@heroku.com(communicating with heroku server)
+make two changes ,heroku does most of the things automatically
+
+make a port dynamic as we have to make an environment variable so that node can read that port while heroku is running
+
+to check all the environment variable :SET command in terminal
+
+
+git add . (will add everything to git commit)
+
+git commint -m ""(m is for message)
+
+
+git push to push the code to git hub
+
+
+heroku create from inside our application
