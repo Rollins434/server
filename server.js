@@ -79,6 +79,13 @@ app.get('/about',(req,res) =>{
 	});  
 });
  
+ app.get('/project',(req,res) =>{
+	//res.send('About Page');res.render will let us render anytemplate we have set up
+	res.render('project.hbs', {
+		pageTitle: 'ProjectPage'
+		// currentYear: new Date().getFullYear()
+	});  
+});
 
 app.get('/bad', (req,res) =>{
 	res.send({
