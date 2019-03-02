@@ -15,6 +15,10 @@ git commint -m ""(m is for message)
 
 
 git push to push the code to git hub
+git push heroku
+then
+heroku open
+
 
 
 heroku create from inside our application
